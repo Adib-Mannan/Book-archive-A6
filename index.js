@@ -5,6 +5,7 @@ const toggleSpinner = displayStyle => {
 
 const searchBook = () => {
     const searchFeild = document.getElementById('search-feild');
+    // spinner 
     toggleSpinner('block');
     const searchText = searchFeild.value;
     searchFeild.value = '';
@@ -12,6 +13,7 @@ const searchBook = () => {
     if (searchText === '') {
         const error = document.getElementById('error-2');
         error.innerHTML = 'Please Write something!';
+        // spinner
         toggleSpinner('none')
     }
     else {
@@ -56,6 +58,7 @@ const displaySearchResult = books => {
           </div>`
             searchResult.appendChild(div);
         });
+        // spinner
         toggleSpinner('none');
     }
 }
