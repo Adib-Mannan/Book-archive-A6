@@ -9,6 +9,7 @@
     <!-- bootstrap -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
+    <link rel="stylesheet" href="index.css">
 </head>
 
 <body>
@@ -22,7 +23,9 @@
             <button onclick="searchBook()" class="btn btn-outline-secondary" type="button"
                 id="search-button">Search</button>
         </div>
-
+        <div id="spinner" class="spinner-border mx-auto" role="status">
+            <span class="visually-hidden mx-auto">Loading...</span>
+        </div>
         <div>
             <h1 class="text-danger text-center" id="error-2"></h1>
             <h1 class="text-danger text-center" id="error-1"></h1>
